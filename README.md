@@ -6,7 +6,7 @@ This repository contains different exploits and hacks and cheat sheets for ethic
 
 ## Disclaimer:
 
-**The [Enterploit](https://github.com/IliyaBadri/Enterploi) is a curated collection of penetration testing tools, resources, and related information provided for educational and research purposes. By accessing and using the Repository, you agree to the terms and conditions outlined in this disclaimer. Please read this disclaimer carefully before proceeding.**
+**The [Enterploit](https://github.com/IliyaBadri/Enterploit) is a curated collection of penetration testing tools, resources, and related information provided for educational and research purposes. By accessing and using the Repository, you agree to the terms and conditions outlined in this disclaimer. Please read this disclaimer carefully before proceeding.**
 
 1.  **Educational and Research Purposes:** The materials contained in the Repository are intended for educational and research purposes only. They are provided to promote the understanding and advancement of ethical hacking, network security, and cybersecurity practices. The Repository is not intended to encourage or support any illegal or unethical activities.
     
