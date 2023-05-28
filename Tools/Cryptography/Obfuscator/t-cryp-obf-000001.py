@@ -100,7 +100,7 @@ print("Please provide a strength value for obfuscation.\nNote: going beyound 35 
 
 Strength = input("Obfuscation strength value: ")
 
-if not Strength.isdigit():
+if not Strength.isdigit() or Strength == 0:
     print("Your strength value was not valid.")
     exit()
 
