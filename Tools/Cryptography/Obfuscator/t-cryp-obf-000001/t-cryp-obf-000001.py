@@ -63,7 +63,7 @@ def obfuscate_times(code, times):
 
 def show_disclaimer():
     try:
-        Disclaimer = requests.get("https://raw.githubusercontent.com/IliyaBadri/Enterploit/main/API/APPDISCLAIMER")
+        Disclaimer = requests.get("https://raw.githubusercontent.com/IliyaBadri/HackSnips/main/API/APPDISCLAIMER")
         print(Disclaimer.text + "\n")
         Agree = input("Continue using the application? (Y/n): ")
 
@@ -83,8 +83,8 @@ def show_disclaimer():
 def main():
     show_disclaimer()
     
-    print("EnterACE Obfuscator")
-    print("This is an free to use script provided by Enterploit repository and developed by EnterACE (All rights reserved).")
+    print("Python Obfuscator")
+    print("This is an free to use script provided by HackSnips repository and developed by EnterACE.")
     
     print("First you should provide a .py file like (test.py) to be obfuscated.")
     OriginalFileName = input("File name: ")
