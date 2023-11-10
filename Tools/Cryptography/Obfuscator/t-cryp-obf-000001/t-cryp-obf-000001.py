@@ -110,3 +110,5 @@ print("Saving . . .")
 theoutputfile = open(file="out.py", mode="w")
 theoutputfile.write(obfuscated_code)
 
+# This code has been published by the HackSnips repository at https://github.com/IliyaBadri/HackSnips.
+
