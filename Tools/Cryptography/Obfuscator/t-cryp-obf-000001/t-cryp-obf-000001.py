@@ -80,35 +80,38 @@ def show_disclaimer():
         # print(e)
         exit()
 
-show_disclaimer()
+def main():
+    show_disclaimer()
+    
+    print("EnterACE Obfuscator")
+    print("This is an free to use script provided by Enterploit repository and developed by EnterACE (All rights reserved).")
+    
+    print("First you should provide a .py file like (test.py) to be obfuscated.")
+    OriginalFileName = input("File name: ")
+    
+    OriginalFileContents = object()
+    try:
+        OriginalFile = open(OriginalFileName, "r")
+        OriginalFileContents = OriginalFile.read()
+    except:
+        print("Couldn't open the provided file.")
+        exit()
+    
+    print("Please provide a strength value for obfuscation.\nNote: going beyound 35 might have preformance issues. please make sure you have a decent amount of ram available.")
+    
+    Strength = input("Obfuscation strength value: ")
+    
+    if not Strength.isdigit() or Strength == 0:
+        print("Your strength value was not valid.")
+        exit()
+    
+    
+    obfuscated_code = obfuscate_times(OriginalFileContents, int(Strength))
+    print("Saving . . .")
+    theoutputfile = open(file="out.py", mode="w")
+    theoutputfile.write(obfuscated_code)
 
-print("EnterACE Obfuscator")
-print("This is an free to use script provided by Enterploit repository and developed by EnterACE (All rights reserved).")
-
-print("First you should provide a .py file like (test.py) to be obfuscated.")
-OriginalFileName = input("File name: ")
-
-OriginalFileContents = object()
-try:
-    OriginalFile = open(OriginalFileName, "r")
-    OriginalFileContents = OriginalFile.read()
-except:
-    print("Couldn't open the provided file.")
-    exit()
-
-print("Please provide a strength value for obfuscation.\nNote: going beyound 35 might have preformance issues. please make sure you have a decent amount of ram available.")
-
-Strength = input("Obfuscation strength value: ")
-
-if not Strength.isdigit() or Strength == 0:
-    print("Your strength value was not valid.")
-    exit()
-
-
-obfuscated_code = obfuscate_times(OriginalFileContents, int(Strength))
-print("Saving . . .")
-theoutputfile = open(file="out.py", mode="w")
-theoutputfile.write(obfuscated_code)
+if __name__ == '__main__':
+    main()
 
 # This code has been published by the HackSnips repository at https://github.com/IliyaBadri/HackSnips.
-
